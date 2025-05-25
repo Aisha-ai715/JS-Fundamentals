@@ -1,7 +1,7 @@
-let arg1 = process.argv[2];
-size = Number(arg1)
+const arg1 = process.argv[2];
+const size = Number(arg1);
 
-if(!size || size<=0){
+if(size<=0 || isNaN(size)){
     console.log('Missing size');
 }else{
     for(let i=0; i<size; i++){

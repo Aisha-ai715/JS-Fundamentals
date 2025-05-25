@@ -1,7 +1,3 @@
-let x = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
+const x = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
 
-let output = '';
-for(let i =0; i<x.length; i++){
-    output += x[i]+ '\n';
-}
-console.log(output.trim());
+for (const i in x) console.log(i);
