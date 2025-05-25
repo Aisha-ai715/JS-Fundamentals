@@ -6,5 +6,5 @@ if(!arg1 && !arg2){
 }else if(!arg1 || !arg2){
     console.log('Argument found');
 }else{
-    console.log('Argument found');
+    console.log('Arguments found');
 }
