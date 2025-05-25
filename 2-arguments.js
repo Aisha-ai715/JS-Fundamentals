@@ -1,11 +1,10 @@
-let number = function(num){
-    if(num === null || num === ""){
-        console.log('No argument');
-    }
-    else{
-        console.log('Argument found');
-    }
-};
+let arg1 =  process.argv[2];
+let arg2 =  process.argv[3];
 
-let num = prompt('please enter argument');
-number(num);
+if(!arg1 && !arg2){
+    console.log('No argument');
+}else if(arg1 != null || arg2 != null){
+    console.log('Argument found');
+}else{
+    console.log('Argument found');
+}
