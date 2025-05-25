@@ -12,4 +12,6 @@ const frictional = function(arg1){
     }
 }
 
-console.log(frictional(arg1));
+const result = frictional(arg1);
+
+console.log(result.toExponential(16));
