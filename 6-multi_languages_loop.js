@@ -1,5 +1,7 @@
 let x = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
 
-for(let i=0; i<3; i++){
+let i = 0
+while(i<x.length){
     console.log(x[i]);
+    i++;
 }
