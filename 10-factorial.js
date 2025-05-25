@@ -8,11 +8,8 @@ function factorial(x) {
         return 1;
     }
 
-    let result = 1;
-    for (let i = x; i > 1; i--) {
-        result *= i;
-    }
-    return result;
+    
+    return x * factorial(n-1);
 }
 
 console.log(factorial(arg1));
