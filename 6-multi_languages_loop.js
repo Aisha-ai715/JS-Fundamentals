@@ -4,4 +4,4 @@ let output = '';
 for(let i =0; i<x.length; i++){
     output += x[i]+ '\n';
 }
-console.log(output);
+console.log(output.trim());
