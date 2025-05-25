@@ -1,3 +1,3 @@
-const x = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
+const words = ["C is fun", "Python is cool", "JavaScript is amazing"];
 
-for (const i in x) console.log(i);
+for (const word in words) console.log(i);
