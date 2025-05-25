@@ -1,15 +1,18 @@
-const arg1 = BigInt(process.argv[2]);
+const arg1 = parseInt(process.argv[2]);
 
-const frictional = function(n) {
-    if (n < 0n) {
-        return 1n;
-    } else {
-        let result = 1n;
-        for (let i = n; i >= 1n; i--) {
-            result *= i;
-        }
-        return result;
+function factorial(x) {
+    if (isNaN(x) || x < 0) {
+        return 1; // or throw new Error('Invalid input');
     }
-};
+    if (x === 0) {
+        return 1;
+    }
 
-console.log(frictional(arg1).toString());
+    let result = 1;
+    for (let i = x; i > 1; i--) {
+        result *= i;
+    }
+    return result;
+}
+
+console.log(factorial(arg1));
