@@ -1,15 +1,15 @@
-const arg1 = Number(process.argv[2]);
+const arg1 = BigInt(process.argv[2]);
 
-const frictional = function(arg1){
-    if(isNaN(arg1) || arg1<0){
-        return 1;
+const frictional = function(n) {
+    if (n < 0n) {
+        return 1n;
     } else {
-        let x = 1
-        for(let i =arg1; i>=1; i--){
-            x *= i;
+        let result = 1n;
+        for (let i = n; i >= 1n; i--) {
+            result *= i;
         }
-        return x;
+        return result;
     }
-}
+};
 
-console.log(frictional(arg1));
+console.log(frictional(arg1).toString());
